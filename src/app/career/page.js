@@ -1,12 +1,10 @@
 'use client'
-import React from "react";
 import {FaCss3, FaHtml5, FaReact} from "react-icons/fa";
 import {RiNextjsFill, RiTailwindCssFill} from "react-icons/ri";
 import {Tooltip, TooltipContent, TooltipProvider, TooltipTrigger} from "@/components/ui/tooltip";
-import {DiJava, DiJavascript} from "react-icons/di";
+import {DiJava } from "react-icons/di";
 import {IoLogoJavascript} from "react-icons/io5";
 import {SiCsharp} from "react-icons/si";
-
 
 
 const skills = {
@@ -50,24 +48,19 @@ const skills = {
 }
 
 export default function Career() {
-    return <section className="bg-white dark:bg-gray-900 mx-auto max-w-screen-xl lg:py-16" id="career">
+    return <section className="bg-white mx-auto max-w-screen-xl py-12 lg:py-16">
         <h1 className="font-bold text-4xl px-4 py-4 mx-auto md:text-6xl tracking-tight leading-none">My Career</h1>
-        <div className="py-2 px-4 mx-auto max-w-screen-xl lg:py-16">
-            <ol className="relative border-s border-gray-500 dark:accent-gray-700">
+        <div className="py-2 px-4 lg:py-16">
+            <ol className="relative border-s border-gray-950">
                 <li className="mb-10 ms-4">
-                    <div
-                        className="absolute w-3 h-3 bg-gray-500 rounded-full mt-1.5 -start-1.5 border border-black dark:gray-900 dark:bg-gray-700"></div>
+                    <div className="absolute w-3 h-3 bg-gray-950 rounded-full mt-1.5 -start-1.5 border border-black"></div>
                     <time
-                        className="mb-1 text-sm font-mono leading-none text-gray-950 dark:text-gray-500">November
+                        className="mb-1 text-sm font-serif leading-none">November
                         2019
                     </time>
-                    <h2 className="text-xl text-gray-900 dark:text-white">Diploma in Information Technology</h2>
-                    <p className="mb-4 text-gray-900 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400"> I
-                        embarked
-                        on my
-                        journey into the world of technology by enrolling in applied computer science
-                        program at the Vaal University of Technology. With a focus on software development
-                        and
+                    <h2 className="text-xl text-gray-900">Diploma in Information Technology</h2>
+                    <p className="mb-4 text-gray-900 lg:mb-8 md:text-lg lg:text-xl"> I
+                        embarked on my journey into the world of technology by enrolling in applied computer science program at the Vaal University of Technology. With a focus on software development and
                         business analysis, I honed my skills in translating business needs into functional
                         software solutions.
                         Throughout my studies, I delved into programming languages like Java and Visual
@@ -77,13 +70,13 @@ export default function Career() {
                 </li>
                 <li className="mb-10 ms-4">
                     <div
-                        className="absolute w-3 h-3 bg-gray-500 rounded-full mt-1.5 -start-1.5 border border-black dark:border-gray-900 dark:bg-gray-700"></div>
+                        className="absolute w-3 h-3 bg-gray-950 rounded-full mt-1.5 -start-1.5 border border-black"></div>
                     <time
-                        className="mb-1 text-sm font-mono leading-none text-gray-950 dark:text-gray-500">March
+                        className="mb-1 text-sm font-serif leading-none">March
                         2021
                     </time>
-                    <h2 className="text-xl text-gray-900 dark:text-white">Software Engineering Intern</h2>
-                    <p className="text-gray-900 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">My
+                    <h2 className="text-xl text-gray-900">Software Engineering Intern</h2>
+                    <p className="text-gray-900 lg:mb-8 md:text-lg lg:text-xl">My
                         career in
                         software engineering began with a junior role at an HR and payroll company, where I
                         worked in a
@@ -96,12 +89,12 @@ export default function Career() {
                 </li>
                 <li className="mb-10 ms-4">
                     <div
-                        className="absolute w-3 h-3 bg-gray-500 rounded-full mt-1.5 -start-1.5 border border-black dark:border-gray-900 dark:bg-gray-700"></div>
+                        className="absolute w-3 h-3 bg-gray-950 rounded-full mt-1.5 -start-1.5 border border-black"></div>
                     <time
-                        className="mb-1 text-sm font-mono leading-none text-gray-950">March
+                        className="mb-1 text-sm font-serif leading-none">March
                         2022
                     </time>
-                    <h2 className="text-xl text-gray-900 dark:text-white">Customer
+                    <h2 className="text-xl text-gray-900">Customer
                         Consultant</h2>
                     <p className="text-gray-900 lg:mb-8 md:text-lg lg:text-xl">After
                         solidifying
@@ -118,14 +111,14 @@ export default function Career() {
                 </li>
                 <li className="mb-10 ms-4">
                     <div
-                        className="absolute w-3 h-3 bg-gray-500 rounded-full mt-1.5 -start-1.5 border border-black dark:border-gray-900 dark:bg-gray-700"></div>
+                        className="absolute w-3 h-3 bg-gray-950 rounded-full mt-1.5 -start-1.5 border border-black"></div>
                     <time
-                        className="mb-1 text-sm font-mono leading-none text-gray-950 dark:text-gray-500">December
+                        className="mb-1 text-sm font-serif leading-none">December
                         2022 - Current
                     </time>
-                    <h2 className="text-xl text-gray-900 dark:text-white">Technical Support
+                    <h2 className="text-xl text-gray-900">Technical Support
                         Analyst</h2>
-                    <p className="text-gray-900 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">My
+                    <p className="text-gray-900 lg:mb-8 md:text-lg lg:text-xl">My
                         transition to a
                         Technical Support Engineer role proved invaluable.
                         Daily interaction with customer inquiries fostered a deeper understanding of the
@@ -149,21 +142,20 @@ export default function Career() {
         </div>
 
         <div className="w-full h-full">
-            <div className="flex flex-col gap-7">
+            <div className="pb-4">
                 <div className="flex text-center">
                     {/*<h3 className="text-4xl font-bold">{skills.title}</h3>*/}
-                    <p className=" mb-4 text-center">{skills.description}</p>
+                    <p className="mb-4 text-center">{skills.description}</p>
                 </div>
             </div>
         </div>
 
-        <ul className="grid grid-cols-2 gap-4 mb-4 sm:grid-cols-3 md:grid-cols-4 xl:gap-7">
-            {skills.skillSet.map((skill, index) => (
+        <ul className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 xl:gap-7">
+            {skills.skillSet.map((skill) => (
                 <li key={skill.index}>
                     <TooltipProvider delayDuration={200}>
                         <Tooltip>
-                            <TooltipTrigger
-                                className="w-full h-24 bg-black rounded-xl text-white flex justify-center items-center group">
+                            <TooltipTrigger className="w-full h-24 bg-black rounded-xl text-white flex justify-center items-center">
                                 <div className="group-hover:text-black transition-all duration-200 text-5xl">{skill.icon}</div>
                             </TooltipTrigger>
                             <TooltipContent>

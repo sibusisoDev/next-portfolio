@@ -1,6 +1,7 @@
 'use client'
 import React, {useState} from 'react';
 import emailjs from '@emailjs/browser';
+import {Button} from "@/components/ui/button";
 
 
 
@@ -38,11 +39,11 @@ export default function Contact () {
         // Clears the form after sending the email
         e.target.reset();
     };
-    return <section className="bg-white mx-auto max-w-screen-xl lg:py-16" id="contact">
+    return <section className="bg-white mx-auto max-w-screen-xl py-8 lg:py-16">
         <h2 className="font-bold text-4xl px-4 md:text-6xl tracking-tight leading-none">Contact Me</h2>
         <div className="grid md:grid-cols-2 gap-4">
             <div className="lg:py-16 px-4 mx-auto max-w-screen-md text-gray-950">
-                <h2 className="text-xl dark:text-gray-400 sm:text-xl lg:py-16">Let's
+                <h2 className="text-2xl py-8 sm:text-xl md:text-3xl lg:py-16">Let's
                     chat about any potential opportunities</h2>
                 <p className="md:text-lg lg:text-xl">I'm always interested in hearing about exciting
                     new opportunities, especially in the systems and web development field.
@@ -51,10 +52,9 @@ export default function Contact () {
                     about how I can help you achieve your goals.</p>
             </div>
             <div className="p-5">
-                <form action="#" className="space-y-8" onSubmit={sendEmail} id="myForm">
+                <form action="#" className="space-y-8 font-serif" onSubmit={sendEmail} id="myForm">
                     <div>
-                        <label htmlFor="email"
-                               className="block mb-2 text-lg font-serif text-gray-800 dark:text-gray-300">E-mail
+                        <label htmlFor="email" className="block mb-2 text-xl font-normal text-gray-900">E-mail
                         </label>
                         <input type="email" name="user_email" className="bg-gray-50 border border-gray-800 text-gray-800 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5" placeholder="name@gmail.com" required/>
                     </div>
@@ -66,14 +66,14 @@ export default function Contact () {
 
                     <div className="sm:col-span-2">
                         <label htmlFor="message"
-                               className="block mb-2 text-lg font-serif text-gray-800 dark:text-gray-400">Your
+                               className="block mb-2 text-lg font-normal text-gray-900">Your
                             message</label>
                         <textarea name="message" rows="6" className="block p-2.5 w-full text-sm text-gray-800 bg-gray-50 rounded-lg shadow-sm border border-gray-800 focus:ring-primary-500 focus:border-primary-500" placeholder="Type your message here..."></textarea>
                     </div>
-                    <button type="submit" typeof="submit" disabled={isSubmitting} value="Send"
-                            className="text-white bg-black md:hover:text-blue-700 transition duration-500 ease-in-out font-bold rounded-full text-sm px-4 py-2 text-cente">Send
+                    <Button type="submit" typeof="submit" disabled={isSubmitting} value="Send"
+                            className="text-white bg-black font-bold md:hover:text-blue-700 rounded-full text-sm px-4 py-2 text-center transition duration-500 ease-in-out">Send
                         message
-                    </button>
+                    </Button>
                     {stateMessage && <p>{stateMessage}</p>}
                 </form>
             </div>

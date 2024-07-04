@@ -26,7 +26,7 @@ export default function NavigationBar() {
 
                 <div className="xl:hidden flex">
                     <Link href="/">
-                        <Button>Download CV</Button>
+                        <Button className="text-white bg-black font-bold md:hover:text-blue-700 rounded-full text-sm px-4 py-2 text-center transition duration-500 ease-in-out">Download CV</Button>
                     </Link>
                     <MobileNav/>
                 </div>

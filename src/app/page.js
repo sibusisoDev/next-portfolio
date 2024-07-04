@@ -1,5 +1,9 @@
 import Image from "next/image";
 import {Button} from "@/components/ui/button";
+import About from "@/app/about/page";
+import Career from "@/app/career/page";
+import Projects from "@/app/projects/page";
+import Contact from "@/app/contact/page";
 
 
 export default function Home() {
@@ -12,8 +16,7 @@ export default function Home() {
                         my future, one line at a time.</h1>
                     <p className="max-w-xl mb-4 text-gray-900 lg:mb-8 md:text-lg lg:text-xl"> I'm
                         a highly motivated developer with a passion for turning ideas into reality.
-                        Eager
-                        to learn and constantly explore new technologies,
+                        Eager to learn and constantly explore new technologies,
                         I bring a blend of creativity and technical expertise to every project. Let's code
                         something amazing together! </p>
                     <Button type="button" href="https://github.com/sibusisoDev"
@@ -37,6 +40,10 @@ export default function Home() {
                 </div>
             </div>
         </div>
+        <About/>
+        <Career/>
+        <Projects/>
+        <Contact/>
     </section>
   );
 }
