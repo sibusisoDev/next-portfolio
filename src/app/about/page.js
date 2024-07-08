@@ -53,7 +53,7 @@ export default function About() {
                         Web Design
                     </label>
                     <h2 className="text-white text-3xl mb-2">Crafting beautiful and functional websites</h2>
-                    <p className="text-lg mb-4 text-white lg:mb-8 md:text-lg lg:text-xl">As
+                    <p className="mb-4 text-white lg:mb-8 md:text-lg lg:text-xl">As
                         a web designer,
                         I get to translate creativity into functional online spaces.
                         I enjoy using the artistic side to craft visually appealing websites, but there's also a
@@ -71,7 +71,7 @@ export default function About() {
                     </label>
                     <h2 className="text-gray-900 text-3xl mb-2">Code and create
                         functionality behind what you see</h2>
-                    <p className="text-lg font mb-4 text-gray-900 lg:mb-8 md:text-lg lg:text-xl">As
+                    <p className="font mb-4 text-gray-900 lg:mb-8 md:text-lg lg:text-xl">As
                         a web developer, I get to turn ideas into reality by crafting websites and web applications.
                         I translate designs and functionalities into code, bringing them to life for users to interact with.
                         But the ultimate satisfaction comes from seeing my creation come online, knowing it can

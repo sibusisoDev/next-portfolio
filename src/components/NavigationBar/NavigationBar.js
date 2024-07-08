@@ -1,4 +1,4 @@
-
+'use client'
 import Link from "next/link";
 import DesktopNav from "@/components/NavigationBar/desktopNav/desktopNav";
 import MobileNav from "@/components/NavigationBar/mobileNav/mobileNav";
@@ -19,13 +19,14 @@ export default function NavigationBar() {
 
                 <div className="hidden xl:flex items-center gap-8">
                     <DesktopNav />
-                    <Link href="/">
+                    <Link href="/Sibusiso_Khanye_CV_.pdf" download="/Sibusiso_Khanye_CV_.pdf" target="_blank">
                         <Button className="text-white bg-black font-bold md:hover:text-blue-700 rounded-full text-sm px-4 py-2 text-center transition duration-500 ease-in-out">Download CV</Button>
                     </Link>
                 </div>
 
+
                 <div className="xl:hidden flex">
-                    <Link href="/">
+                    <Link href="/Sibusiso_Khanye_CV_.pdf" download="/Sibusiso_Khanye_CV_.pdf" target="_blank">
                         <Button className="text-white bg-black font-bold md:hover:text-blue-700 rounded-full text-sm px-4 py-2 text-center transition duration-500 ease-in-out">Download CV</Button>
                     </Link>
                     <MobileNav/>

@@ -1,6 +1,10 @@
 {
-  "extends": "next/core-web-vitals",
+  "extends": ["eslint:recommended", "next"],
   "rules": {
+    "quotes" : [0],
+    "allowTemplateLiterals" : 0,
+    "no-useless-escape": "off",
+    "avoidEscape" : 0,
     "react/no-unescaped-entities": "off",
     "@next/next/no-page-custom-font": "off"
   }

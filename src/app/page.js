@@ -24,14 +24,14 @@ export default function Home() {
                         My GitHub
                     </Button>
                 </div>
-                <div className="order-1 xl:order-none mb-8 xl:mb-0">
+                <div className="mb-8 xl:mb-0">
                     <div className="w-full h-full relative">
                         <div className="w-[275px] h-[275px] xl:w-[425px] xl:h-[425px]">
                             <Image
                                 src="/profile-picture.jpg"
-                                quality={100}
+                                quality={75}
                                 fill
-                                alt=""
+                                alt="Profile Picture"
                                 className="rounded-full border-b-black object-cover"
                                 priority={true}
                             />

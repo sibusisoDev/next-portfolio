@@ -14,35 +14,44 @@ const skills = {
         "(React, NextJS and TailwindCSS) to stay ahead of the curve. I believe in user-centered design and strive to create accessible and engaging web experiences.",
     skillSet : [
         {
+            id : 1,
             icon : <FaHtml5/>,
             name : "HTML 5"
         },
         {
+            id : 2,
             icon : <FaCss3/>,
             name : "CSS 3"
         },
         {
+            id : 3,
             icon : <IoLogoJavascript/>,
             name : "JavaScript"
         },
         {
+            id : 4,
             icon : <FaReact/>,
             name : "React"
-        },   {
+        },
+        {
+            id : 5,
             icon : <RiNextjsFill/>,
             name : "NextJS"
         },
         {
+            id : 6,
             icon : <RiTailwindCssFill/>,
             name : "TailwindCSS"
         },
         {
+            id : 7,
             icon : <DiJava/>,
             name : "Java"
         },
         {
+            id : 8,
             icon : <SiCsharp/>,
-            name : "Microsoft C#"
+            name : "C#"
         },
     ]
 }
@@ -152,12 +161,13 @@ export default function Career() {
 
         <ul className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 xl:gap-7">
             {skills.skillSet.map((skill) => (
-                <li key={skill.index}>
+                <li key={skill.id}>
                     <TooltipProvider delayDuration={200}>
                         <Tooltip>
                             <TooltipTrigger className="w-full h-24 bg-black rounded-xl text-white flex justify-center items-center">
                                 <div className="group-hover:text-black transition-all duration-200 text-5xl">{skill.icon}</div>
                             </TooltipTrigger>
+
                             <TooltipContent>
                                 <p>{skill.name}</p>
                             </TooltipContent>

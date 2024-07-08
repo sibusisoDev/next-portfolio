@@ -1,6 +1,6 @@
 "use client"
 import {usePathname} from "next/navigation";
-import {CiMenuBurger, CiMenuFries} from "react-icons/ci";
+import { CiMenuFries} from "react-icons/ci";
 import {Sheet, SheetTrigger, SheetContent} from "@/components/ui/sheet";
 import Link from "next/link";
 
